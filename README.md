@@ -1,2 +1,3 @@
-# solidity-boilerplate
+# boilerplate-solidity
+
 A boilerplate for Solidity project.
