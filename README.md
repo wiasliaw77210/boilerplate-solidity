@@ -2,9 +2,7 @@
 
 A boilerplate for Solidity project.
 
-## Setup
-
-## Commands
+## Builder Commands
 
 - Setup buidler project
 
