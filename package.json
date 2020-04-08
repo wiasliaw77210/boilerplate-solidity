@@ -1,0 +1,39 @@
+{
+  "name": "boilerplate-solidity",
+  "version": "1.0.0",
+  "description": "A boilerplate for Solidity project.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "buidler compile",
+    "postcompile": "typechain --target ethers --outDir build/typings 'build/artifacts/*.json'",
+    "test": "buidler test",
+    "linter": "buidler check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wiasliaw77210/boilerplate-solidity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wiasliaw77210/boilerplate-solidity/issues"
+  },
+  "homepage": "https://github.com/wiasliaw77210/boilerplate-solidity#readme",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.2.0",
+    "@nomiclabs/buidler-ethers": "^1.2.0",
+    "@nomiclabs/buidler-solhint": "^1.2.0",
+    "@nomiclabs/buidler-waffle": "^1.2.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^2.4.0",
+    "ethers": "^4.0.46",
+    "ts-node": "^8.8.2",
+    "typechain": "^1.0.5",
+    "typechain-target-ethers": "^1.0.4",
+    "typescript": "^3.8.3"
+  }
+}
