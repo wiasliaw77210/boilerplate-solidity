@@ -78,7 +78,7 @@ npx buidler check
 
 ## Reference
 
-[AAA](https://hackernoon.com/the-new-solidity-dev-stack-buidler-ethers-waffle-typescript-706830w0)
+[The New Solidity Dev Stack: Buidler + Ethers + Waffle + Typescript [Tutorial]](https://hackernoon.com/the-new-solidity-dev-stack-buidler-ethers-waffle-typescript-706830w0)
 
 [Solidity 的新開發工具集：Buidler, Waffle, ethers](https://medium.com/@yurenju/ethersjs-waffle-buidler-6e67df037800)
 
