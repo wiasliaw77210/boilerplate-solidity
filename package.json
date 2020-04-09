@@ -4,6 +4,7 @@
   "description": "A boilerplate for Solidity project.",
   "main": "index.js",
   "scripts": {
+    "clean": "buidler clean",
     "compile": "buidler compile",
     "postcompile": "buidler typechain",
     "test": "buidler test",
