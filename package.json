@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "buidler compile",
-    "postcompile": "typechain --target ethers --outDir build/typings 'build/artifacts/*.json'",
+    "postcompile": "buidler typechain",
     "test": "buidler test",
     "linter": "buidler check"
   },
@@ -28,12 +28,16 @@
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "@types/node": "^13.11.0",
+    "buidler-typechain": "0.0.5",
     "chai": "^4.2.0",
     "ethereum-waffle": "^2.4.0",
     "ethers": "^4.0.46",
+    "ts-generator": "0.0.8",
     "ts-node": "^8.8.2",
     "typechain": "^1.0.5",
     "typechain-target-ethers": "^1.0.4",
+    "typechain-target-truffle": "^1.0.2",
+    "typechain-target-web3-v1": "^1.0.4",
     "typescript": "^3.8.3"
   }
 }

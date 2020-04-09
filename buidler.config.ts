@@ -2,6 +2,7 @@ import { BuidlerConfig, usePlugin } from '@nomiclabs/buidler/config';
 
 usePlugin('@nomiclabs/buidler-ethers');
 usePlugin('@nomiclabs/buidler-waffle');
+usePlugin('buidler-typechain');
 usePlugin('@nomiclabs/buidler-solhint');
 
 const config: BuidlerConfig = {
@@ -11,8 +12,12 @@ const config: BuidlerConfig = {
   },
   paths: {
     sources: './src',
-    cache: './build/cache',
+    cache: './cache',
     artifacts: './build/artifacts',
+  },
+  typechain: {
+    outDir: './build/typings',
+    target: 'ethers'
   }
 };
 
