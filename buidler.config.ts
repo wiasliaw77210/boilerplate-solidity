@@ -4,6 +4,7 @@ usePlugin('@nomiclabs/buidler-ethers');
 usePlugin('@nomiclabs/buidler-waffle');
 usePlugin('buidler-typechain');
 usePlugin('@nomiclabs/buidler-solhint');
+usePlugin('solidity-coverage');
 
 const config: BuidlerConfig = {
   defaultNetwork: 'buidlerevm',
@@ -18,7 +19,12 @@ const config: BuidlerConfig = {
   typechain: {
     outDir: './build/typings',
     target: 'ethers'
-  }
+  },
+  networks: {
+    coverage: {
+      url: "http://127.0.0.1:8555"
+    }
+  },
 };
 
 export default config;

@@ -1,5 +1,6 @@
 import chai from 'chai';
-import { waffle } from '@nomiclabs/buidler';
+import { Wallet } from 'ethers';
+import { ethers } from '@nomiclabs/buidler';
 import { deployContract, solidity } from 'ethereum-waffle';
 
 import CounterArtifact from '../build/artifacts/Counter.json';
@@ -9,12 +10,16 @@ chai.use(solidity);
 const { expect } = chai;
 
 describe('Counter', () => {
-  const provider = waffle.provider;
-  let [wallet] = provider.getWallets();
   let counter: Counter;
 
-  beforeEach(async () => {
+  const deployFunc = async () => {
+    const [signers] = await ethers.signers();
+    const wallet = (signers as Wallet);
     counter = await deployContract(wallet, CounterArtifact) as Counter;
+  };
+
+  beforeEach(async () => {
+    await deployFunc();
   });
 
   it('Should Count Up', async () => {

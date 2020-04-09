@@ -106,3 +106,4 @@ dist
 # buidler compile
 build/
 cache/
+coverage.json
